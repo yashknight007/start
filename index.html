@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random HTML Index</title>
+</head>
+<body>
+    <h1>Random Message Generator</h1>
+    <p id="randomMessage"></p>
+
+    <script>
+        const messages = [
+            "Hello, world!",
+            "Welcome to our website.",
+            "Have a great day!",
+            "Explore more content below.",
+            "Coding is fun!",
+            "Stay curious!",
+            "Learn something new today."
+        ];
+
+        // Generate a random index
+        const randomIndex = Math.floor(Math.random() * messages.length);
+
+        // Display the random message
+        document.getElementById("randomMessage").textContent = messages[randomIndex];
+    </script>
+</body>
+</html>
